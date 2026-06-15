@@ -1,199 +1,69 @@
 {
   "business": {
-    "name": "Hawthorne & Co.",
-    "tagline": "Plumbing Nashville homeowners *trust*.",
-    "description": "Licensed, insured, and family-run since 2009. From middle-of-the-night emergencies to full repipes, Hawthorne & Co. brings honest pricing and clean, careful work to homes across greater Nashville.",
-    "industry": "plumber",
-    "foundedYear": 2009,
-    "license": "Licensed & insured · TN Master Plumber #12345",
-    "domain": "hawthorneplumbing.com"
+    "name": "Iconic Detailing",
+    "tagline": "Boise auto detailing you can *trust*.",
+    "description": "Iconic Detailing provides trusted auto detailing services across Boise. Honest pricing, quality work, and friendly service every time.",
+    "industry": "detailer",
+    "foundedYear": 2021,
+    "license": "Licensed & insured",
+    "domain": "iconic-detailing.netlify.app"
   },
   "contact": {
-    "phone": "(615) 555-0142",
-    "phoneTel": "+16155550142",
-    "email": "hello@hawthorneplumbing.com",
-    "address": {
-      "street": "1208 Hawthorne Ave",
-      "city": "Nashville",
-      "state": "TN",
-      "zip": "37206"
-    },
+    "phone": "(208) 602-2517",
+    "phoneTel": "+12086022517",
+    "email": "hello@iconicdetailing.com",
+    "address": { "street": "", "city": "Boise", "state": "ID", "zip": "" },
     "hours": [
-      { "days": "Mon – Fri", "time": "7:00 AM – 6:00 PM" },
-      { "days": "Saturday", "time": "8:00 AM – 2:00 PM" },
-      { "days": "Sunday", "time": "Emergency service only" }
+      { "days": "Mon – Fri", "time": "8:00 AM – 6:00 PM" },
+      { "days": "Saturday", "time": "9:00 AM – 2:00 PM" },
+      { "days": "Sunday", "time": "Closed" }
     ],
-    "mapsUrl": "https://maps.google.com/?q=Hawthorne+%26+Co+Plumbing+Nashville"
+    "mapsUrl": "https://www.google.com/maps/search/Iconic+Detailing+Boise+ID"
   },
-  "serviceArea": [
-    "Nashville",
-    "East Nashville",
-    "Franklin",
-    "Brentwood",
-    "Hendersonville",
-    "Mt. Juliet",
-    "Murfreesboro",
-    "Green Hills",
-    "Belle Meade",
-    "Germantown"
-  ],
+  "serviceArea": ["Boise", "Meridian", "Eagle", "Nampa", "Garden City", "Kuna"],
   "services": [
-    {
-      "slug": "emergency-plumbing",
-      "title": "Emergency Repairs",
-      "blurb": "Burst pipes, major leaks, no hot water — same-day response, 24 hours a day."
-    },
-    {
-      "slug": "drain-cleaning",
-      "title": "Drain & Sewer Cleaning",
-      "blurb": "Camera diagnostics, hydro-jetting, and root removal that actually lasts."
-    },
-    {
-      "slug": "water-heaters",
-      "title": "Water Heaters",
-      "blurb": "Tank and tankless installs, repairs, and same-week replacements."
-    },
-    {
-      "slug": "repiping",
-      "title": "Repiping & Remodels",
-      "blurb": "Whole-home repipes and clean rough-ins for kitchens and bathrooms."
-    },
-    {
-      "slug": "fixtures",
-      "title": "Fixtures & Faucets",
-      "blurb": "Faucets, toilets, disposals, and water filtration — installed right."
-    },
-    {
-      "slug": "inspections",
-      "title": "Inspections & Maintenance",
-      "blurb": "Pre-purchase inspections and annual tune-ups that catch problems early."
-    }
+    { "slug": "full-detail", "title": "Full Detail", "blurb": "Professional full detail done right the first time." },
+    { "slug": "interior-detail", "title": "Interior Detail", "blurb": "Deep interior clean — seats, carpets, vents, and trim." },
+    { "slug": "exterior-and-wax", "title": "Exterior & Wax", "blurb": "Hand wash, decontamination, and a protective wax finish." },
+    { "slug": "ceramic-coating", "title": "Ceramic Coating", "blurb": "Long-term paint protection with multi-year warranty options." },
+    { "slug": "paint-correction", "title": "Paint Correction", "blurb": "Swirl and scratch removal that restores a showroom shine." },
+    { "slug": "headlight-restoration", "title": "Headlight Restoration", "blurb": "Clear up foggy headlights for safer night driving." }
   ],
   "reviews": {
     "rating": 4.9,
-    "count": 312,
+    "count": 110,
     "source": "Google",
-    "sourceUrl": "https://maps.google.com/?q=Hawthorne+%26+Co+Plumbing+Nashville",
+    "sourceUrl": "https://www.google.com/maps/search/Iconic+Detailing+Boise+ID",
     "items": [
-      {
-        "author": "Jenna R.",
-        "rating": 5,
-        "date": "2 weeks ago",
-        "body": "Woke up to water all over the kitchen floor. Marcus had someone out within the hour, found the slab leak, and walked me through every option with zero pressure. Fair price, spotless work."
-      },
-      {
-        "author": "David M.",
-        "rating": 5,
-        "date": "1 month ago",
-        "body": "Tankless install in an older East Nashville home — not a simple job. The crew was on time, tidy, and clearly knew what they were doing. The quote matched the final bill to the dollar."
-      },
-      {
-        "author": "Priya S.",
-        "rating": 5,
-        "date": "1 month ago",
-        "body": "Three other plumbers quoted me a full repipe. Hawthorne found it was one bad section, fixed it for a fraction, and never tried to upsell. Honest people — I won't call anyone else."
-      },
-      {
-        "author": "Tom B.",
-        "rating": 5,
-        "date": "2 months ago",
-        "body": "Used them for a bathroom remodel rough-in. Communicative, licensed, and the inspection passed first try. Already booked them for my rental property."
-      }
+      { "author": "Google review", "rating": 5, "date": "7 months ago", "body": "Cody was thankfully able to see me on short notice because there was a big stain on the side of the car I just bought... the prices here were very reasonable. He did a thorough job and was friendly and my car looks GREAT! Iconic has my business for life!" },
+      { "author": "Google review", "rating": 5, "date": "a year ago", "body": "Took my truck through trails rougher than I should have and had severe scratches all over one side. I left it here overnight and he made the paint look like it was fresh off of the assembly line. A truly amazing job." },
+      { "author": "Google review", "rating": 5, "date": "3 years ago", "body": "Excellent service by Cody at Iconic Detailing... When I picked up my car I was amazed all the water spots were removed... this is the best customer service, experience, and service there is for a detailing shop in Boise. Thanks again Cody!" },
+      { "author": "Google review", "rating": 5, "date": "3 years ago", "body": "Iconic detailing is my go to detail shop... The outcome was nothing short of fantastic. It was very easy to schedule... the staff and employees are really nice... the car looks amazing." }
     ]
   },
   "process": [
-    {
-      "n": "01",
-      "title": "Call or request",
-      "body": "Tell us what's going on. You'll get a real arrival window and a straight answer — no runaround, no call center."
-    },
-    {
-      "n": "02",
-      "title": "Upfront estimate",
-      "body": "We diagnose on-site and quote the full price before any work begins. You approve it first. No surprises on the invoice."
-    },
-    {
-      "n": "03",
-      "title": "Clean, careful work",
-      "body": "Licensed plumbers, drop cloths down, shoes covered. We treat your home like ours and leave it cleaner than we found it."
-    },
-    {
-      "n": "04",
-      "title": "Stand behind it",
-      "body": "Every repair is guaranteed in writing. If something isn't right, we come back and make it right — no argument."
-    }
+    { "n": "01", "title": "Reach out", "body": "Tell Iconic Detailing what you need. You'll get a real response and a clear next step — no runaround." },
+    { "n": "02", "title": "Upfront estimate", "body": "We assess the work and quote the full price before anything begins. You approve it first." },
+    { "n": "03", "title": "Quality work", "body": "Careful pros do the job right and treat your vehicle with respect." },
+    { "n": "04", "title": "Stand behind it", "body": "Our work is guaranteed. If something isn't right, we make it right." }
   ],
   "faq": [
-    {
-      "q": "Do you offer emergency service?",
-      "a": "Yes. We answer calls 24/7 for burst pipes, major leaks, and no-hot-water emergencies across greater Nashville — usually with same-day response."
-    },
-    {
-      "q": "Are you licensed and insured?",
-      "a": "Absolutely. Hawthorne & Co. is a licensed TN Master Plumber (#12345) and fully insured. We're happy to show proof of both on request."
-    },
-    {
-      "q": "Do you charge for estimates?",
-      "a": "Diagnostic visits are a flat rate, credited toward the repair if you move forward. You'll always approve the full price before we start any work."
-    },
-    {
-      "q": "What areas do you serve?",
-      "a": "Nashville and the surrounding communities — East Nashville, Franklin, Brentwood, Hendersonville, Mt. Juliet, Murfreesboro, and more."
-    },
-    {
-      "q": "Do you guarantee your work?",
-      "a": "Every job is backed by a written workmanship guarantee, on top of the manufacturer warranties on the parts and fixtures we install."
-    },
-    {
-      "q": "How soon can you come out?",
-      "a": "Most non-emergency calls are scheduled within 1–2 days; true emergencies are same-day. Call (615) 555-0142 for the next available window."
-    }
+    { "q": "What areas does Iconic Detailing serve?", "a": "We proudly serve Boise and the surrounding communities — Meridian, Eagle, Nampa, and more. Call to confirm we cover your area." },
+    { "q": "Are you licensed and insured?", "a": "Yes — Iconic Detailing is fully licensed and insured. We're happy to provide proof on request." },
+    { "q": "Do you offer free estimates?", "a": "Reach out and we'll get you a clear, upfront quote before any work begins." },
+    { "q": "How soon can you get me in?", "a": "Most details are scheduled within a day or two, with priority for urgent jobs. Call (208) 602-2517 for the next opening." },
+    { "q": "Do you offer ceramic coating warranties?", "a": "Yes — we offer multi-year ceramic coating packages. We'll walk you through the options for your vehicle." }
   ],
   "about": {
-    "owner": "Marcus Hawthorne",
-    "ownerRole": "Founder & Master Plumber",
+    "owner": "Cody",
+    "ownerRole": "Owner & Lead Detailer",
     "photo": null,
     "paragraphs": [
-      "Hawthorne & Co. started in 2009 with one truck, one master plumber, and a simple promise: tell people the truth and do the job right the first time.",
-      "Fifteen years later we're still family-run. We've grown by word of mouth — homeowners who were treated fairly telling their neighbors — not by chasing the cheapest bid or the biggest upsell.",
-      "Every plumber on our team is licensed, background-checked, and trained to leave your home cleaner than they found it. That's the standard Marcus holds, and it's why most of our work comes from repeat customers."
+      "Iconic Detailing is a locally owned and operated detail shop serving Boise and the surrounding area.",
+      "We've built our reputation on honest pricing, meticulous work, and treating every vehicle like our own — which is why so much of our business comes from repeat customers and referrals."
     ]
   },
-  "social": {
-    "google": "https://maps.google.com/?q=Hawthorne+%26+Co+Plumbing+Nashville",
-    "facebook": "https://facebook.com/hawthorneplumbing",
-    "instagram": "https://instagram.com/hawthorneplumbing",
-    "yelp": "https://yelp.com/biz/hawthorne-and-co-nashville"
-  },
-  "portfolio": {
-    "title": "Recent projects",
-    "intro": "A look at recent work across greater Nashville — tap any project for detail.",
-    "items": [
-      { "category": "Repipes", "caption": "Whole-home repipe — East Nashville" },
-      { "category": "Water Heaters", "caption": "Tankless install — Franklin" },
-      { "category": "Remodels", "caption": "Master bath rough-in — Brentwood" },
-      { "category": "Drains", "caption": "Sewer line replacement — Germantown" },
-      { "category": "Water Heaters", "caption": "50-gal swap — Hendersonville" },
-      { "category": "Remodels", "caption": "Kitchen relocation — Green Hills" }
-    ]
-  },
-  "beforeAfter": {
-    "title": "Before & after",
-    "intro": "Clean, careful work you can see — drag to compare.",
-    "items": [
-      { "label": "Corroded supply lines → clean copper repipe" },
-      { "label": "Failing tank heater → tidy tankless install" }
-    ]
-  },
-  "cta": {
-    "heading": "Got a plumbing problem? Let's fix it right.",
-    "body": "Same-day emergency service and upfront pricing across greater Nashville.",
-    "primary": "Call (615) 555-0142",
-    "secondary": "Request an estimate"
-  },
-  "theme": {
-    "mode": "light",
-    "accent": "#b4532a"
-  },
-  "template": "fluid-glass"
+  "social": { "facebook": "https://www.facebook.com/share/1B8NcWZp8D/" },
+  "theme": { "mode": "light", "accent": "#1f6feb" },
+  "template": "fresh-local"
 }
