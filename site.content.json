@@ -1,0 +1,199 @@
+{
+  "business": {
+    "name": "Hawthorne & Co.",
+    "tagline": "Plumbing Nashville homeowners *trust*.",
+    "description": "Licensed, insured, and family-run since 2009. From middle-of-the-night emergencies to full repipes, Hawthorne & Co. brings honest pricing and clean, careful work to homes across greater Nashville.",
+    "industry": "plumber",
+    "foundedYear": 2009,
+    "license": "Licensed & insured · TN Master Plumber #12345",
+    "domain": "hawthorneplumbing.com"
+  },
+  "contact": {
+    "phone": "(615) 555-0142",
+    "phoneTel": "+16155550142",
+    "email": "hello@hawthorneplumbing.com",
+    "address": {
+      "street": "1208 Hawthorne Ave",
+      "city": "Nashville",
+      "state": "TN",
+      "zip": "37206"
+    },
+    "hours": [
+      { "days": "Mon – Fri", "time": "7:00 AM – 6:00 PM" },
+      { "days": "Saturday", "time": "8:00 AM – 2:00 PM" },
+      { "days": "Sunday", "time": "Emergency service only" }
+    ],
+    "mapsUrl": "https://maps.google.com/?q=Hawthorne+%26+Co+Plumbing+Nashville"
+  },
+  "serviceArea": [
+    "Nashville",
+    "East Nashville",
+    "Franklin",
+    "Brentwood",
+    "Hendersonville",
+    "Mt. Juliet",
+    "Murfreesboro",
+    "Green Hills",
+    "Belle Meade",
+    "Germantown"
+  ],
+  "services": [
+    {
+      "slug": "emergency-plumbing",
+      "title": "Emergency Repairs",
+      "blurb": "Burst pipes, major leaks, no hot water — same-day response, 24 hours a day."
+    },
+    {
+      "slug": "drain-cleaning",
+      "title": "Drain & Sewer Cleaning",
+      "blurb": "Camera diagnostics, hydro-jetting, and root removal that actually lasts."
+    },
+    {
+      "slug": "water-heaters",
+      "title": "Water Heaters",
+      "blurb": "Tank and tankless installs, repairs, and same-week replacements."
+    },
+    {
+      "slug": "repiping",
+      "title": "Repiping & Remodels",
+      "blurb": "Whole-home repipes and clean rough-ins for kitchens and bathrooms."
+    },
+    {
+      "slug": "fixtures",
+      "title": "Fixtures & Faucets",
+      "blurb": "Faucets, toilets, disposals, and water filtration — installed right."
+    },
+    {
+      "slug": "inspections",
+      "title": "Inspections & Maintenance",
+      "blurb": "Pre-purchase inspections and annual tune-ups that catch problems early."
+    }
+  ],
+  "reviews": {
+    "rating": 4.9,
+    "count": 312,
+    "source": "Google",
+    "sourceUrl": "https://maps.google.com/?q=Hawthorne+%26+Co+Plumbing+Nashville",
+    "items": [
+      {
+        "author": "Jenna R.",
+        "rating": 5,
+        "date": "2 weeks ago",
+        "body": "Woke up to water all over the kitchen floor. Marcus had someone out within the hour, found the slab leak, and walked me through every option with zero pressure. Fair price, spotless work."
+      },
+      {
+        "author": "David M.",
+        "rating": 5,
+        "date": "1 month ago",
+        "body": "Tankless install in an older East Nashville home — not a simple job. The crew was on time, tidy, and clearly knew what they were doing. The quote matched the final bill to the dollar."
+      },
+      {
+        "author": "Priya S.",
+        "rating": 5,
+        "date": "1 month ago",
+        "body": "Three other plumbers quoted me a full repipe. Hawthorne found it was one bad section, fixed it for a fraction, and never tried to upsell. Honest people — I won't call anyone else."
+      },
+      {
+        "author": "Tom B.",
+        "rating": 5,
+        "date": "2 months ago",
+        "body": "Used them for a bathroom remodel rough-in. Communicative, licensed, and the inspection passed first try. Already booked them for my rental property."
+      }
+    ]
+  },
+  "process": [
+    {
+      "n": "01",
+      "title": "Call or request",
+      "body": "Tell us what's going on. You'll get a real arrival window and a straight answer — no runaround, no call center."
+    },
+    {
+      "n": "02",
+      "title": "Upfront estimate",
+      "body": "We diagnose on-site and quote the full price before any work begins. You approve it first. No surprises on the invoice."
+    },
+    {
+      "n": "03",
+      "title": "Clean, careful work",
+      "body": "Licensed plumbers, drop cloths down, shoes covered. We treat your home like ours and leave it cleaner than we found it."
+    },
+    {
+      "n": "04",
+      "title": "Stand behind it",
+      "body": "Every repair is guaranteed in writing. If something isn't right, we come back and make it right — no argument."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do you offer emergency service?",
+      "a": "Yes. We answer calls 24/7 for burst pipes, major leaks, and no-hot-water emergencies across greater Nashville — usually with same-day response."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Absolutely. Hawthorne & Co. is a licensed TN Master Plumber (#12345) and fully insured. We're happy to show proof of both on request."
+    },
+    {
+      "q": "Do you charge for estimates?",
+      "a": "Diagnostic visits are a flat rate, credited toward the repair if you move forward. You'll always approve the full price before we start any work."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "Nashville and the surrounding communities — East Nashville, Franklin, Brentwood, Hendersonville, Mt. Juliet, Murfreesboro, and more."
+    },
+    {
+      "q": "Do you guarantee your work?",
+      "a": "Every job is backed by a written workmanship guarantee, on top of the manufacturer warranties on the parts and fixtures we install."
+    },
+    {
+      "q": "How soon can you come out?",
+      "a": "Most non-emergency calls are scheduled within 1–2 days; true emergencies are same-day. Call (615) 555-0142 for the next available window."
+    }
+  ],
+  "about": {
+    "owner": "Marcus Hawthorne",
+    "ownerRole": "Founder & Master Plumber",
+    "photo": null,
+    "paragraphs": [
+      "Hawthorne & Co. started in 2009 with one truck, one master plumber, and a simple promise: tell people the truth and do the job right the first time.",
+      "Fifteen years later we're still family-run. We've grown by word of mouth — homeowners who were treated fairly telling their neighbors — not by chasing the cheapest bid or the biggest upsell.",
+      "Every plumber on our team is licensed, background-checked, and trained to leave your home cleaner than they found it. That's the standard Marcus holds, and it's why most of our work comes from repeat customers."
+    ]
+  },
+  "social": {
+    "google": "https://maps.google.com/?q=Hawthorne+%26+Co+Plumbing+Nashville",
+    "facebook": "https://facebook.com/hawthorneplumbing",
+    "instagram": "https://instagram.com/hawthorneplumbing",
+    "yelp": "https://yelp.com/biz/hawthorne-and-co-nashville"
+  },
+  "portfolio": {
+    "title": "Recent projects",
+    "intro": "A look at recent work across greater Nashville — tap any project for detail.",
+    "items": [
+      { "category": "Repipes", "caption": "Whole-home repipe — East Nashville" },
+      { "category": "Water Heaters", "caption": "Tankless install — Franklin" },
+      { "category": "Remodels", "caption": "Master bath rough-in — Brentwood" },
+      { "category": "Drains", "caption": "Sewer line replacement — Germantown" },
+      { "category": "Water Heaters", "caption": "50-gal swap — Hendersonville" },
+      { "category": "Remodels", "caption": "Kitchen relocation — Green Hills" }
+    ]
+  },
+  "beforeAfter": {
+    "title": "Before & after",
+    "intro": "Clean, careful work you can see — drag to compare.",
+    "items": [
+      { "label": "Corroded supply lines → clean copper repipe" },
+      { "label": "Failing tank heater → tidy tankless install" }
+    ]
+  },
+  "cta": {
+    "heading": "Got a plumbing problem? Let's fix it right.",
+    "body": "Same-day emergency service and upfront pricing across greater Nashville.",
+    "primary": "Call (615) 555-0142",
+    "secondary": "Request an estimate"
+  },
+  "theme": {
+    "mode": "light",
+    "accent": "#b4532a"
+  },
+  "template": "fluid-glass"
+}

@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════════════
+   THEME TOKENS
+   Light is the default (:root). The .theme-dark class — applied to <html>
+   from site.config.theme.mode — overrides them. --accent is injected inline
+   in layout.tsx from site.config.theme.accent, so it's swappable per client.
+   ═══════════════════════════════════════════════════════════════════════ */
+:root {
+  /* Only THREE colors define a theme: background, foreground, accent.
+     Any client can override these (inline on <html> from theme.bg/fg/accent),
+     and everything below derives from them — so custom palettes stay coherent
+     and you're never locked into the template's defaults. */
+  --bg: #f7f5f1; /* warm cream */
+  --fg: #1f1d1b; /* charcoal */
+  --accent: #b4532a; /* fallback; overridden inline from config */
+
+  /* derived — recompute automatically from whatever --bg/--fg/--accent are */
+  --fg-dim: color-mix(in srgb, var(--fg) 58%, var(--bg));
+  --hairline: color-mix(in srgb, var(--fg) 14%, transparent);
+  --hairline-strong: color-mix(in srgb, var(--fg) 26%, transparent);
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, transparent);
+
+  /* ── shared design tokens — templates override these in app/templates.css ── */
+  --container: 1320px;
+  --radius: 14px; /* default card radius */
+  --radius-lg: 22px;
+  --radius-pill: 999px; /* button shape; Studio = full pill */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 200ms;
+  --dur: 400ms;
+  --dur-slow: 800ms;
+  --shadow-soft: 0 18px 44px -22px color-mix(in srgb, var(--fg) 35%, transparent);
+  /* glass derives from the live palette, so it adapts to any brand color */
+  --glass-bg: color-mix(in srgb, var(--bg) 70%, transparent);
+  --glass-stroke: color-mix(in srgb, var(--fg) 12%, transparent);
+  --glass-blur: 14px;
+  --glass-shadow: 0 8px 32px -14px color-mix(in srgb, var(--fg) 38%, transparent);
+  --glass-specular: color-mix(in srgb, #ffffff 55%, transparent);
+}
+
+/* Dark mode just swaps the two base colors; the derived tokens follow. */
+.theme-dark {
+  --bg: #0a0a0b; /* near-black, premium (Open vibe) */
+  --fg: #f4f4f2;
+  --accent-soft: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+/* ── Section background tones (separate the blocks) ─────────────────────── */
+.sec-tone-tint {
+  background: color-mix(in srgb, var(--accent) 7%, var(--bg));
+}
+.sec-tone-muted {
+  background: color-mix(in srgb, var(--fg) 5%, var(--bg));
+}
+.sec-tone-contrast {
+  /* dark band — text + hairlines flip to light, accent pops */
+  --bg: #1f1d1b;
+  --fg: #f7f5f1;
+  --fg-dim: rgba(247, 243, 238, 0.62);
+  --hairline: rgba(247, 243, 238, 0.15);
+  --hairline-strong: rgba(247, 243, 238, 0.3);
+  --accent-soft: color-mix(in srgb, var(--accent) 22%, transparent);
+  background: var(--bg);
+  color: var(--fg);
+}
+
+/* ── Subtle film grain for depth ────────────────────────────────────────── */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ── Kinetic marquee ────────────────────────────────────────────────────── */
+@keyframes mc-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.marquee-track {
+  display: inline-flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  will-change: transform;
+  animation: mc-marquee 34s linear infinite;
+}
+
+/* ── Hover lift for cards ───────────────────────────────────────────────── */
+.lift {
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.4s ease;
+}
+.lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 44px -22px rgba(20, 20, 19, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* ── Editorial type utilities ──────────────────────────────────────────── */
+.text-display {
+  /* Token-driven so each template restyles headlines without touching JSX.
+     The defaults below === the original Studio look (sans, bold, tight),
+     so a site with no template set is visually unchanged. */
+  font-family: var(--display-family, var(--font-sans)), system-ui, sans-serif;
+  letter-spacing: var(--display-tracking, -0.03em);
+  line-height: var(--display-leading, 1);
+  font-weight: var(--display-weight, 600);
+}
+
+.text-eyebrow {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--fg-dim);
+  font-weight: 500;
+}
+
+/* ── Hairline borders (color via CSS var) ──────────────────────────────── */
+.hairline {
+  border-color: var(--hairline);
+}
+.hairline-strong {
+  border-color: var(--hairline-strong);
+}
+
+/* ── Theme-color helpers (reliable CSS-var colors, no Tailwind guessing) ── */
+.text-dim {
+  color: var(--fg-dim);
+}
+.text-fg {
+  color: var(--fg);
+}
+.text-accent {
+  color: var(--accent);
+}
+.bg-soft {
+  background-color: var(--accent-soft);
+}
+
+/* ── Underline sweep link ──────────────────────────────────────────────── */
+.link-line {
+  position: relative;
+  display: inline-block;
+}
+.link-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-line:hover::after {
+  transform: scaleX(1);
+}
+
+/* ── Pill buttons ──────────────────────────────────────────────────────── */
+.btn-primary,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.95rem 1.85rem;
+  border-radius: var(--radius-pill, 999px); /* templates can square this off */
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px var(--accent);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--fg);
+  border: 1px solid var(--hairline-strong);
+}
+.btn-ghost:hover {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+}
+
+/* ── Glass system (tasteful frosted glass; pure CSS, instant-load, SEO-safe) ── */
+.glass {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  backdrop-filter: blur(var(--glass-blur)) saturate(180%);
+  border: 1px solid var(--glass-stroke);
+  box-shadow: var(--glass-shadow), inset 0 1px 0 var(--glass-specular);
+}
+.glass-strong {
+  --glass-blur: 22px;
+  --glass-bg: color-mix(in srgb, var(--bg) 82%, transparent);
+}
+.glass-hairline {
+  border: 1px solid var(--glass-stroke);
+  box-shadow: inset 0 1px 0 var(--glass-specular);
+}
+/* Graceful fallback where backdrop-filter is unsupported. */
+@supports not (
+  (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))
+) {
+  .glass {
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+  }
+}
+
+/* ── Layout helpers ─────────────────────────────────────────────────────── */
+.u-container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 4rem);
+}
+.u-section {
+  padding-block: clamp(4.5rem, 11vh, 9rem);
+}
+.u-radius {
+  border-radius: var(--radius);
+}
+.u-radius-lg {
+  border-radius: var(--radius-lg);
+}
+
+/* ── Lenis smooth scroll (managed by components/SmoothScroll) ───────────── */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ── Reduced motion ────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

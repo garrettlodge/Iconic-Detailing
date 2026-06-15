@@ -1,0 +1,102 @@
+/* ═══════════════════════════════════════════════════════════════════════
+   TEMPLATE TOKEN THEMES
+   Each block re-skins the shared engine via tokens only — palette, type
+   feel, radii, glass intensity. Selected by data-template on <html> (set in
+   layout.tsx from site.content.json → `template`). The derived tokens
+   (--fg-dim, --hairline, glass…) recompute automatically from --bg/--fg, and
+   the per-client --accent (injected inline) still wins, so every template
+   adapts to the client's brand color. "studio" needs no block — the defaults
+   in globals.css ARE Studio.
+
+   :root[data-template=…] is used (specificity 0,2,0) so these reliably beat
+   the :root defaults regardless of stylesheet order.
+   ═══════════════════════════════════════════════════════════════════════ */
+
+/* ── Fluid Glass — editorial luxury, warm off-white, big serif, soft glass ── */
+:root[data-template="fluid-glass"] {
+  --bg: #f3f1ec;
+  --fg: #16151a;
+  --display-family: var(--font-display); /* Fraunces */
+  --display-weight: 460;
+  --display-tracking: -0.02em;
+  --display-leading: 1.06;
+  --radius: 18px;
+  --radius-lg: 28px;
+  --radius-pill: 999px;
+  --glass-blur: 18px;
+  --glass-bg: color-mix(in srgb, var(--bg) 64%, transparent);
+  --shadow-soft: 0 30px 60px -30px color-mix(in srgb, var(--fg) 45%, transparent);
+}
+
+/* ── Bold Trade — dark, industrial, heavy grotesk, squared edges ─────────── */
+:root[data-template="bold-trade"] {
+  --bg: #0c0d0f;
+  --fg: #f4f5f6;
+  --display-family: var(--font-display); /* Archivo */
+  --display-weight: 800;
+  --display-tracking: -0.02em;
+  --display-leading: 0.92;
+  --radius: 4px;
+  --radius-lg: 6px;
+  --radius-pill: 6px; /* squared, rugged */
+  --glass-blur: 16px;
+  --glass-bg: color-mix(in srgb, var(--bg) 58%, transparent);
+  --glass-stroke: color-mix(in srgb, var(--fg) 16%, transparent);
+}
+
+/* ── Fresh Local — bright, friendly, rounded ─────────────────────────────── */
+:root[data-template="fresh-local"] {
+  --bg: #fbfaf7;
+  --fg: #1d2421;
+  --display-family: var(--font-display); /* Poppins */
+  --display-weight: 700;
+  --display-tracking: -0.02em;
+  --display-leading: 1.05;
+  --radius: 22px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+  --glass-blur: 14px;
+}
+
+/* ── Clinical Calm — airy, soft blue-white, reassuring ───────────────────── */
+:root[data-template="clinical-calm"] {
+  --bg: #f4f8fb;
+  --fg: #14202a;
+  --display-family: var(--font-display); /* Outfit */
+  --display-weight: 600;
+  --display-tracking: -0.02em;
+  --display-leading: 1.04;
+  --radius: 16px;
+  --radius-lg: 26px;
+  --radius-pill: 999px;
+  --glass-blur: 16px;
+  --glass-bg: color-mix(in srgb, var(--bg) 68%, transparent);
+}
+
+/* ── Warm Table — rich, earthy, elegant serif ────────────────────────────── */
+:root[data-template="warm-table"] {
+  --bg: #faf6f0;
+  --fg: #221a14;
+  --display-family: var(--font-display); /* Playfair Display */
+  --display-weight: 600;
+  --display-tracking: 0em;
+  --display-leading: 1.04;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --glass-blur: 16px;
+}
+
+/* ── Modern Pro — sharp, navy-neutral, corporate-clean ───────────────────── */
+:root[data-template="modern-pro"] {
+  --bg: #f7f8fa;
+  --fg: #0f1622;
+  --display-family: var(--font-display); /* Space Grotesk */
+  --display-weight: 600;
+  --display-tracking: -0.03em;
+  --display-leading: 1;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 8px; /* slightly squared, professional */
+  --glass-blur: 14px;
+}
