@@ -12,47 +12,143 @@
     "phone": "(208) 602-2517",
     "phoneTel": "+12086022517",
     "email": "hello@iconicdetailing.com",
-    "address": { "street": "", "city": "Boise", "state": "ID", "zip": "" },
+    "address": {
+      "street": "",
+      "city": "Boise",
+      "state": "ID",
+      "zip": ""
+    },
     "hours": [
-      { "days": "Mon – Fri", "time": "8:00 AM – 6:00 PM" },
-      { "days": "Saturday", "time": "9:00 AM – 2:00 PM" },
-      { "days": "Sunday", "time": "Closed" }
+      {
+        "days": "Mon – Fri",
+        "time": "8:00 AM – 6:00 PM"
+      },
+      {
+        "days": "Saturday",
+        "time": "9:00 AM – 2:00 PM"
+      },
+      {
+        "days": "Sunday",
+        "time": "Closed"
+      }
     ],
     "mapsUrl": "https://www.google.com/maps/search/Iconic+Detailing+Boise+ID"
   },
-  "serviceArea": ["Boise", "Meridian", "Eagle", "Nampa", "Garden City", "Kuna"],
+  "serviceArea": [
+    "Boise",
+    "Meridian",
+    "Eagle",
+    "Nampa",
+    "Garden City",
+    "Kuna"
+  ],
   "services": [
-    { "slug": "full-detail", "title": "Full Detail", "blurb": "Professional full detail done right the first time." },
-    { "slug": "interior-detail", "title": "Interior Detail", "blurb": "Deep interior clean — seats, carpets, vents, and trim." },
-    { "slug": "exterior-and-wax", "title": "Exterior & Wax", "blurb": "Hand wash, decontamination, and a protective wax finish." },
-    { "slug": "ceramic-coating", "title": "Ceramic Coating", "blurb": "Long-term paint protection with multi-year warranty options." },
-    { "slug": "paint-correction", "title": "Paint Correction", "blurb": "Swirl and scratch removal that restores a showroom shine." },
-    { "slug": "headlight-restoration", "title": "Headlight Restoration", "blurb": "Clear up foggy headlights for safer night driving." }
+    {
+      "slug": "full-detail",
+      "title": "Full Detail",
+      "blurb": "Professional full detail done right the first time."
+    },
+    {
+      "slug": "interior-detail",
+      "title": "Interior Detail",
+      "blurb": "Deep interior clean — seats, carpets, vents, and trim."
+    },
+    {
+      "slug": "exterior-and-wax",
+      "title": "Exterior & Wax",
+      "blurb": "Hand wash, decontamination, and a protective wax finish."
+    },
+    {
+      "slug": "ceramic-coating",
+      "title": "Ceramic Coating",
+      "blurb": "Long-term paint protection with multi-year warranty options."
+    },
+    {
+      "slug": "paint-correction",
+      "title": "Paint Correction",
+      "blurb": "Swirl and scratch removal that restores a showroom shine."
+    },
+    {
+      "slug": "headlight-restoration",
+      "title": "Headlight Restoration",
+      "blurb": "Clear up foggy headlights for safer night driving."
+    }
   ],
   "reviews": {
     "rating": 4.9,
-    "count": 110,
+    "count": "",
     "source": "Google",
-    "sourceUrl": "https://www.google.com/maps/search/Iconic+Detailing+Boise+ID",
+    "sourceUrl": "",
     "items": [
-      { "author": "Google review", "rating": 5, "date": "7 months ago", "body": "Cody was thankfully able to see me on short notice because there was a big stain on the side of the car I just bought... the prices here were very reasonable. He did a thorough job and was friendly and my car looks GREAT! Iconic has my business for life!" },
-      { "author": "Google review", "rating": 5, "date": "a year ago", "body": "Took my truck through trails rougher than I should have and had severe scratches all over one side. I left it here overnight and he made the paint look like it was fresh off of the assembly line. A truly amazing job." },
-      { "author": "Google review", "rating": 5, "date": "3 years ago", "body": "Excellent service by Cody at Iconic Detailing... When I picked up my car I was amazed all the water spots were removed... this is the best customer service, experience, and service there is for a detailing shop in Boise. Thanks again Cody!" },
-      { "author": "Google review", "rating": 5, "date": "3 years ago", "body": "Iconic detailing is my go to detail shop... The outcome was nothing short of fantastic. It was very easy to schedule... the staff and employees are really nice... the car looks amazing." }
+      {
+        "author": "Google review",
+        "rating": 5,
+        "date": "7 months ago",
+        "body": "Cody was thankfully able to see me on short notice because there was a big stain on the side of the car I just bought... the prices here were very reasonable. He did a thorough job and was friendly and my car looks GREAT! Iconic has my business for life!"
+      },
+      {
+        "author": "Google review",
+        "rating": 5,
+        "date": "a year ago",
+        "body": "Took my truck through trails rougher than I should have and had severe scratches all over one side. I left it here overnight and he made the paint look like it was fresh off of the assembly line. A truly amazing job."
+      },
+      {
+        "author": "Google review",
+        "rating": 5,
+        "date": "3 years ago",
+        "body": "Excellent service by Cody at Iconic Detailing... When I picked up my car I was amazed all the water spots were removed... this is the best customer service, experience, and service there is for a detailing shop in Boise. Thanks again Cody!"
+      },
+      {
+        "author": "Google review",
+        "rating": 5,
+        "date": "3 years ago",
+        "body": "Iconic detailing is my go to detail shop... The outcome was nothing short of fantastic. It was very easy to schedule... the staff and employees are really nice... the car looks amazing."
+      }
     ]
   },
   "process": [
-    { "n": "01", "title": "Reach out", "body": "Tell Iconic Detailing what you need. You'll get a real response and a clear next step — no runaround." },
-    { "n": "02", "title": "Upfront estimate", "body": "We assess the work and quote the full price before anything begins. You approve it first." },
-    { "n": "03", "title": "Quality work", "body": "Careful pros do the job right and treat your vehicle with respect." },
-    { "n": "04", "title": "Stand behind it", "body": "Our work is guaranteed. If something isn't right, we make it right." }
+    {
+      "n": "01",
+      "title": "Reach out",
+      "body": "Tell Iconic Detailing what you need. You'll get a real response and a clear next step — no runaround."
+    },
+    {
+      "n": "02",
+      "title": "Upfront estimate",
+      "body": "We assess the work and quote the full price before anything begins. You approve it first."
+    },
+    {
+      "n": "03",
+      "title": "Quality work",
+      "body": "Careful pros do the job right and treat your vehicle with respect."
+    },
+    {
+      "n": "04",
+      "title": "Stand behind it",
+      "body": "Our work is guaranteed. If something isn't right, we make it right."
+    }
   ],
   "faq": [
-    { "q": "What areas does Iconic Detailing serve?", "a": "We proudly serve Boise and the surrounding communities — Meridian, Eagle, Nampa, and more. Call to confirm we cover your area." },
-    { "q": "Are you licensed and insured?", "a": "Yes — Iconic Detailing is fully licensed and insured. We're happy to provide proof on request." },
-    { "q": "Do you offer free estimates?", "a": "Reach out and we'll get you a clear, upfront quote before any work begins." },
-    { "q": "How soon can you get me in?", "a": "Most details are scheduled within a day or two, with priority for urgent jobs. Call (208) 602-2517 for the next opening." },
-    { "q": "Do you offer ceramic coating warranties?", "a": "Yes — we offer multi-year ceramic coating packages. We'll walk you through the options for your vehicle." }
+    {
+      "q": "What areas does Iconic Detailing serve?",
+      "a": "We proudly serve Boise and the surrounding communities — Meridian, Eagle, Nampa, and more. Call to confirm we cover your area."
+    },
+    {
+      "q": "Are you licensed and insured?",
+      "a": "Yes — Iconic Detailing is fully licensed and insured. We're happy to provide proof on request."
+    },
+    {
+      "q": "Do you offer free estimates?",
+      "a": "Reach out and we'll get you a clear, upfront quote before any work begins."
+    },
+    {
+      "q": "How soon can you get me in?",
+      "a": "Most details are scheduled within a day or two, with priority for urgent jobs. Call (208) 602-2517 for the next opening."
+    },
+    {
+      "q": "Do you offer ceramic coating warranties?",
+      "a": "Yes — we offer multi-year ceramic coating packages. We'll walk you through the options for your vehicle."
+    }
   ],
   "about": {
     "owner": "Cody",
@@ -63,7 +159,12 @@
       "We've built our reputation on honest pricing, meticulous work, and treating every vehicle like our own — which is why so much of our business comes from repeat customers and referrals."
     ]
   },
-  "social": { "facebook": "https://www.facebook.com/share/1B8NcWZp8D/" },
-  "theme": { "mode": "light", "accent": "#1f6feb" },
-  "template": "fresh-local"
+  "social": {
+    "facebook": "https://www.facebook.com/share/1B8NcWZp8D/"
+  },
+  "theme": {
+    "mode": "light",
+    "accent": "#1f6feb"
+  },
+  "template": "bold-trade"
 }
