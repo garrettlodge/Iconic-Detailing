@@ -166,5 +166,46 @@
     "mode": "light",
     "accent": "#1f6feb"
   },
-  "template": "bold-trade"
+  "template": "bold-trade",
+  "sections": [
+    {
+      "type": "hero",
+      "visible": true
+    },
+    {
+      "type": "trustbar",
+      "visible": true
+    },
+    {
+      "type": "reviews",
+      "visible": true,
+      "tone": "contrast"
+    },
+    {
+      "type": "services",
+      "visible": true
+    },
+    {
+      "type": "process",
+      "visible": true,
+      "tone": "muted"
+    },
+    {
+      "type": "about",
+      "visible": true
+    },
+    {
+      "type": "serviceArea",
+      "visible": true,
+      "tone": "tint"
+    },
+    {
+      "type": "faq",
+      "visible": true
+    },
+    {
+      "type": "contact",
+      "visible": true
+    }
+  ]
 }
