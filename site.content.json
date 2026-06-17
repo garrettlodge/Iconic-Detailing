@@ -206,6 +206,15 @@
     {
       "type": "contact",
       "visible": true
+    },
+    {
+      "id": "block-1781656510674",
+      "type": "imageBlock",
+      "visible": true,
+      "data": {
+        "image": "/uploads/1781656524077-screenshot-2026-06-15-at-1.11.52-pm.jpg",
+        "caption": "Caption"
+      }
     }
   ]
 }
