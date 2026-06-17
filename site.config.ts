@@ -148,8 +148,10 @@ export interface SiteConfig {
   }[];
 }
 
-// site.content.json holds the values; the cast applies the precise types
-// (JSON widens unions like `industry`/`theme.mode` to `string`).
-export const siteConfig: SiteConfig = content as SiteConfig;
+// site.content.json holds the values; the cast applies the precise types.
+// Cast through `unknown` because JSON widens unions (industry/theme.mode → string)
+// and the optional `sections[]` Mission Control writes infers a shape TS won't
+// directly overlap with SiteConfig. The JSON is authored to match SiteConfig.
+export const siteConfig: SiteConfig = content as unknown as SiteConfig;
 
 export default siteConfig;
