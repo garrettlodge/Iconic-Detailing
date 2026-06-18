@@ -174,7 +174,10 @@
     },
     {
       "type": "trustbar",
-      "visible": true
+      "visible": true,
+      "stat2Value": "Est. 2021",
+      "stat1Label": "Reviews",
+      "stat3Label": "Areas"
     },
     {
       "type": "reviews",
