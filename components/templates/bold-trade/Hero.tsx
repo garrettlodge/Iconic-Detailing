@@ -78,16 +78,16 @@ export default function Hero() {
           </motion.div>
 
           <motion.dl
-            {...fadeUp(0.45)}
-            className="grid grid-cols-3 overflow-hidden border hairline-strong u-radius"
-          >
-            {stats.map((s, i) => (
-              <div key={i} className={`px-5 py-4 ${i ? "border-l hairline-strong" : ""}`}>
-                <dt className="text-display text-2xl leading-none">{s.k}</dt>
-                <dd className="text-eyebrow mt-2 whitespace-nowrap">{s.v}</dd>
-              </div>
-            ))}
-          </motion.dl>
+  {...fadeUp(0.45)}
+  className="grid grid-cols-1 divide-y hairline-strong border hairline-strong u-radius overflow-hidden sm:grid-cols-3 sm:divide-y-0 sm:divide-x"
+>
+  {stats.map((s, i) => (
+    <div key={i} className="min-w-0 px-5 py-4">
+      <dt className="text-display text-2xl leading-none">{s.k}</dt>
+      <dd className="text-eyebrow mt-2">{s.v}</dd>
+    </div>
+  ))}
+</motion.dl>
         </div>
       </div>
     </section>
