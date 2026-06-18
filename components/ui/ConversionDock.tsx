@@ -22,25 +22,34 @@ export default function ConversionDock() {
         className="glass fixed inset-x-0 bottom-0 z-40 border-t md:hidden"
         style={{ paddingBottom: "env(safe-area-inset-bottom)", borderRadius: 0 }}
       >
-        <div className="flex items-stretch gap-2 p-2.5">
-          <a href={`tel:${contact.phoneTel}`} className="btn-primary flex-1">
+        <div className="mx-auto flex max-w-shell items-stretch gap-2 p-2.5">
+          <a
+            href={`tel:${contact.phoneTel}`}
+            className="btn-primary min-w-0 flex-1 justify-center"
+          >
             Call now
           </a>
-          <a href="#contact" className="btn-ghost flex-1">
+          <a
+            href="#contact"
+            className="btn-ghost min-w-0 flex-1 justify-center"
+          >
             Get a quote
           </a>
         </div>
       </div>
 
-      {/* desktop floating call */}
-      <a
-        href={`tel:${contact.phoneTel}`}
-        className="btn-primary fixed bottom-6 right-6 z-40 hidden md:inline-flex"
-        style={{ boxShadow: "0 16px 40px -12px var(--accent)" }}
-        aria-label={`Call ${contact.phone}`}
-      >
-        <PhoneIcon /> {contact.phone}
-      </a>
+      {/* desktop floating call — wrapped so visibility lives on the parent,
+          immune to btn-primary's display cascade */}
+      <div className="pointer-events-none fixed bottom-6 right-6 z-40 hidden md:block">
+        <a
+          href={`tel:${contact.phoneTel}`}
+          className="btn-primary pointer-events-auto inline-flex"
+          style={{ boxShadow: "0 16px 40px -12px var(--accent)" }}
+          aria-label={`Call ${contact.phone}`}
+        >
+          <PhoneIcon /> {contact.phone}
+        </a>
+      </div>
     </>
   );
 }
